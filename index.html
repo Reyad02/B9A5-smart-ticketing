@@ -23,6 +23,7 @@
 
 <body>
     <header class="lg:max-w-screen-xl lg:mx-auto">
+        <!-- navbar section  -->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -66,9 +67,15 @@
                 <div class="hero-overlay lg:rounded-3xl"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="">
-                        <h1 class="mb-5 text-5xl font-bold max-w-xl">End-to-End Travel with <span class="green-clr">P Paribahan</span></h1>
-                        <p class="mb-5 max-w-2xl">Discover convenience at your fingertips! Book budget-friendly bus tickets with P Paribahan, ensuring comfort and reliability. Don't miss out – reserve your seats today for a stress-free travel experience!</p>
-                        <button class="btn bg-[#1DD100] outline-none border-none rounded-xl px-7 raleway text-xl font-extrabold">Buy Tickets</button>
+                        <h1 class="mb-5 text-5xl font-bold max-w-xl">End-to-End Travel with <span class="green-clr">P
+                                Paribahan</span></h1>
+                        <p class="mb-5 max-w-2xl">Discover convenience at your fingertips! Book budget-friendly bus
+                            tickets with P Paribahan, ensuring comfort and reliability. Don't miss out – reserve your
+                            seats today for a stress-free travel experience!</p>
+                        <a href="#bus-container"><button
+                                class="btn bg-[#1DD100] outline-none border-none rounded-xl px-7 raleway text-xl font-extrabold">Buy
+                                Tickets</button></a>
+
                     </div>
                 </div>
             </div>
@@ -105,9 +112,216 @@
                 </div>
             </div>
 
-            <button class="btn raleway border border-[#1DD100] green-clr rounded-xl mt-10 bg-[#FAF7F5]">See All Offers</button>
+            <button class="btn raleway border border-[#1DD100] green-clr rounded-xl mt-10 bg-[#FAF7F5]">See All
+                Offers</button>
         </section>
     </header>
+
+    <main id="bus-container" class="border-t-2 border-[#1DD100] rounded-t-[60px] py-10">
+
+        <section class="lg:max-w-screen-xl lg:mx-auto">
+
+            <!-- about PH Paribahan  -->
+            <div class="text-center">
+                <h1 class="text-3xl font-bold">P.H Paribahan</h1>
+                <p class="max-w-2xl mx-auto mt-4">Book affordable bus tickets online with ease at P.H Paribahan. Enjoy a
+                    seamless journey with our modern fleet. Secure your seats now!</p>
+                <div class="flex flex-col lg:flex-row gap-10 items-center">
+
+                    <!-- journey info  -->
+                    <div class="flex flex-col grow">
+
+                        <!-- bus info  -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-5">
+                                <img src="images/bus-logo.png" alt="" class="">
+                                <div class="text-left">
+                                    <p class="font-bold">Greenline Paribahan</p>
+                                    <p>Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn bg-[#1DD1001A] rounded-xl"><img src="images/seat-green.png" alt="">
+                                    <span id="bus-seat">16</span>Seats left</button>
+                            </div>
+                        </div>
+
+                        <!-- journey info  -->
+                        <div class=" py-8 px-4">
+                            <form class="w-full ">
+                                <div class="flex items-center border-b-2  border-dashed border-[#03071233] py-2">
+                                    <input
+                                        class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                        type="text" placeholder="Route" aria-label="Full name">
+
+                                    <button
+                                        class="flex-shrink-0 border-transparent border-4 text-black hover:text-teal-800 text-sm py-1 px-2 rounded font-semibold"
+                                        type="button">
+                                        Dhaka - Sylhet
+                                    </button>
+                                </div>
+                            </form>
+
+                            <form class="w-full ">
+                                <div class="flex items-center border-b-2  border-dashed border-[#03071233] py-2">
+                                    <input
+                                        class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                        type="text" placeholder="Departure Time" aria-label="Full name">
+
+                                    <button
+                                        class="flex-shrink-0 border-transparent border-4 text-black hover:text-teal-800 text-sm py-1 px-2 rounded font-semibold"
+                                        type="button">
+                                        9:00 PM
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="flex flex-col lg:flex-row gap-10 mt-6 justify-evenly">
+                                <button class="btn rounded-xl px-4">Boarding Point - Laxmipur</button>
+                                <button class="btn rounded-xl px-6">Dropping Point - Bogura</button>
+                                <button class="btn rounded-xl px-10">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <img class="lg:ml-10 rotate-90 lg:rotate-0" src="images/info-devider.png" alt="">
+
+                    <!-- fear per seat  -->
+                    <div class="grow flex flex-col items-center">
+                        <img class="w-fit" src="images/fare.png" alt="">
+                        <p class="raleway font-bold text-3xl">550 Taka</p>
+                        <p class="raleway">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- seats part and fear calc -->
+            <div class="grid grid-cols-7 gap-10">
+                <div class="col-span-5 lg:col-span-5 ">
+                    <h1 class="text-xl">Select Your Seat</h1>
+                    <div class="flex justify-between">
+                        <div class="flex items-center gap-2">
+                            <img src="images/seat-gray.png" alt="">
+                            <p>Available</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <p>Selected</p>
+                        </div>
+                    </div>
+
+                    <!-- seat  -->
+                    <div class="grid grid-cols-11 items-center gap-5">
+                        <button class="btn rounded-xl" style="grid-column: 10/span 2;"><img src="images/Vector.png"
+                                alt=""></button>
+                        <p class="col-span-1 text-right">A</p>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="a1">A1</button>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="a2">A2</button>
+                        <div class="col-span-2"></div>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="a3">A3</button>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="a4">A4</button>
+                        <p class="col-span-1 text-right">B</p>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="b1">B1</button>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="b2">B2</button>
+                        <div class="col-span-2"></div>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="b3">B3</button>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="b4">B4</button>
+                        <p class="col-span-1 text-right">C</p>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="c1">C1</button>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="c2">C2</button>
+                        <div class="col-span-2"></div>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="c3">C3</button>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="c4">C4</button>
+                        <p class="col-span-1 text-right">D</p>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="d1">D1</button>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="d2">D2</button>
+                        <div class="col-span-2"></div>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="d3">D3</button>
+                        <button class="btn col-span-2 seat-btn rounded-xl" id="d4">D4</button>
+
+                    </div>
+                </div>
+                <div class="col-span-5 lg:col-span-2">
+                    <h1 class="text-xl">Select Your Seat</h1>
+                    <div>
+                        <div id="selected-seat-info">
+                            <div class="flex justify-between">
+                                <p class="font-bold">Seat<sup class="bg-[#1DD100] text-white px-2 rounded-md" id="sup-seat">0</sup>
+                                </p>
+                                <p class="font-bold">Class</p>
+                                <p class="font-bold">Price</p>
+                            </div>
+                            
+                        </div>
+                        <hr>
+                        <div class="flex justify-between">
+                            <p>Total Price: </p>
+                            <p>BDT <span id="sum">0</span></p>
+                        </div>
+                        <!-- coupon -->
+                        <div class="">
+                            <form>
+                                <div class="relative " id="coupon-textfield">
+                                    <input disabled type="text" id="coupon"
+                                        class="block w-full p-4  text-sm  border border-gray-300 rounded-lg    dark:text-black"
+                                        placeholder="Have any coupon?" />
+                                    <button disabled type="submit" id="apply"
+                                        class="text-white absolute end-2.5 bottom-2.5   focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 bg-[#1DD100]">Apply</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="flex justify-between hidden" id="discount-div">
+                            <p>Discount: </p>
+                            <p id="discount" class=""></p>
+
+                        </div>
+
+                        <div class="flex justify-between">
+                            <p>Grand Total: </p>
+                            <p>BDT <span id="grand-sum">0</span></p>
+                        </div>
+
+                    </div>
+
+                    <!-- form  -->
+                    <div class="flex flex-col gap-4">
+                        <div> <label for="name">Passenger Name*</label>
+                            <input type="text" id="name"
+                                class="block w-full p-4  text-sm  border border-gray-300 rounded-lg    dark:text-white"
+                                placeholder="Enter Your Name" required />
+                        </div>
+                        <div> <label for="name">Phone Number*</label>
+                            <input type="text" id="name"
+                                class="block w-full p-4  text-sm  border border-gray-300 rounded-lg    dark:text-white"
+                                placeholder="Enter Your Name" required />
+                        </div>
+                        <div> <label for="name">Email</label>
+                            <input type="email" id="name"
+                                class="block w-full p-4  text-sm  border border-gray-300 rounded-lg    dark:text-white"
+                                placeholder="Enter Your Name" required />
+                        </div>
+
+
+
+
+                    </div>
+                    <button class="w-full bg-[#1DD100] rounded-2xl py-5 font-bold text-white mt-5">Submit</button>
+                    <div class="flex justify-evenly">
+                        <p class="underline">Terms and Conditions</p>
+                        <p class="underline">Cancellation Policy</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+    </main>
 
 
     <script src="js/app.js"></script>
