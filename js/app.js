@@ -5,6 +5,7 @@ let busSeat = document.getElementById("bus-seat");
 const couponText = document.getElementById("coupon");
 let discountP = document.getElementById("discount");
 let discountDiv = document.getElementById("discount-div");
+let firstChild = document.getElementById("first-child");
 
 let sum = 0;
 let grandTotal = 0;
@@ -79,6 +80,13 @@ function selectedSeatInfo(seat) {
     div.appendChild(seatP);
     div.appendChild(classP);
     div.appendChild(priceP);
+
+    div.classList.add("pt-2")
+
+    firstChild.classList.add("border-b-2")
+    firstChild.classList.add("pb-3")
+    firstChild.classList.add("border-dashed")
+
     parentDiv.appendChild(div);
 }
 
