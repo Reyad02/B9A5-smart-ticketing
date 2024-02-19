@@ -51,6 +51,9 @@ applyForCoupon.addEventListener("click", function () {
         discountDiv.classList.remove("hidden");
         setInnerText("discount", discount);
     }
+    else{
+        alert("Wrong coupon code used!!!");
+    }
 })
 
 document.getElementById('myForm').addEventListener('submit', function (event) {
@@ -60,7 +63,7 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
         modal.showModal();
     }
     else {
-        alert("Firstly book a seat!!!");
+        alert("You have to book at least one sit!!!");
     }
 });
 
