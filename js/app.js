@@ -3,8 +3,8 @@ let busAllSeat = [];
 const seats = document.getElementsByClassName("seat-btn");
 let busSeat = document.getElementById("bus-seat");
 const couponText = document.getElementById("coupon");
-let discountP =document.getElementById("discount");
-let discountDiv =document.getElementById("discount-div");
+let discountP = document.getElementById("discount");
+let discountDiv = document.getElementById("discount-div");
 
 let sum = 0;
 let grandTotal = 0;
@@ -28,8 +28,6 @@ for (const seat of seats) {
             const applyBtn = document.getElementById("apply");
             applyBtn.removeAttribute("disabled");
         }
-
-
     })
 
 }
@@ -51,10 +49,20 @@ applyForCoupon.addEventListener("click", function () {
         document.getElementById("coupon-textfield").classList.add("hidden");
         discountDiv.classList.remove("hidden");
         setInnerText("discount", discount);
-
-
     }
 })
+
+document.getElementById('myForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (count > 0) {
+        const modal = document.getElementById("my_modal_5");
+        modal.showModal();
+    }
+    else {
+        alert("Firstly book a seat!!!");
+    }
+});
+
 
 function selectedSeatInfo(seat) {
     const parentDiv = document.getElementById("selected-seat-info");
